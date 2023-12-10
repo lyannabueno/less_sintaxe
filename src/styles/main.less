@@ -1,6 +1,7 @@
 @import "mapas.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+@breakpointPc: ~"(min-width: 1024px)";
 
 .marginBottom8 {
     margin-bottom: 8px;
@@ -30,6 +31,10 @@ li {
     flex-direction: column;
     justify-content: center;
     
+    @media @breakpointPc {
+        max-width: 40%;
+    }
+
     @media @breakpointMobile {
         max-width: 70%;
     }
